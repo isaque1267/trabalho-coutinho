@@ -83,7 +83,7 @@ a[href^="https"] {
 .osso {
     width: 120px; 
     height: 60px;
-    background-image: url('/img/osso.png'); 
+    background-image: url('osso.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
