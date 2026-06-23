@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, azure, rgba(109, 1, 1, 0.5));
+    font-family: Arial, sans-serif;
+}
+
+.paginas { 
+    background-color: rgb(2, 2, 75); 
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.paginas ul { 
+    list-style: none; 
+    display: flex; 
+}
+
+.paginas a {
+    text-decoration: none;
+    color: gold;
+    font-weight: 700;
+    padding: 15px 20px;
+    display: block;
+    text-shadow: 2px 2px black;
+}
+
+.paginas a.ativo {
+    background-color: rgb(1, 1, 163); 
+}
+
+.cachorro {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+caption{
+    background-color: white;
+}
+
+table, caption, th, td {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+#raça {
+    padding: 20px;
+}
+
+#comentario {
+    opacity: 0.7;
+    color: rgb(151, 151, 151);
+}
+
+a[href^="https"] {
+    display: block;
+    background-image: url(/img/globo.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.osso {
+    width: 120px; 
+    height: 60px;
+    background-image: url('/img/osso.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    cursor: grab;
+    touch-action: none;
+    z-index: 9999;
+}
+
+.osso:active { 
+    cursor: grabbing; 
+}
