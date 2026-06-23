@@ -72,7 +72,7 @@ td {
 
 a[href^="https"] {
     display: block;
-    background-image: url(/img/globo.png);
+    background-image: url(imgs/globo.png);
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: left center;
@@ -83,7 +83,7 @@ a[href^="https"] {
 .osso {
     width: 120px; 
     height: 60px;
-    background-image: url('osso.png'); 
+    background-image: url('imgs/osso.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
