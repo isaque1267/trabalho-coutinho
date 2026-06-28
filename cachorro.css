@@ -15,10 +15,35 @@ body {
     padding: 35px;
 }
 
+.aleatorios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aleatorios img{
+    border: 0.5vh solid yellow;
+    border-radius: 15vh;
+}
+
+.aleatorios .img1{
+    width: 50%;
+    height: 30%;
+    transform: translate(2vh, 3vh);
+}
+
+.aleatorios .img2{
+    width: 80vh;
+    height: 70vh;
+    object-position: center;
+    object-fit: cover;
+    clear: both;
+    transform: translate(-15vh, -35vh);
+}
+
 .paginas { 
     background-image: url(imgs/images.jpeg);
     background-size: cover;
-    background-position-y: -600px;
+    background-position-y: -100vh;
     width: 100%;
     position: sticky;
     top: 0;
@@ -66,22 +91,13 @@ body {
 .apresentaçao h2{
     margin-top: 30px;
     font-size: 50px;
-    margin-left: 20%;
-}
-
-.apresentaçao p{
-    font-size: 30px;
-    position: relative;
-    margin-top: 20px;
-    margin-left: 40%;
 }
 
 .cachorro {
-    width: 150px;
     height: auto;
     display: block;
     margin: 0 auto;
-    border: 2px solid yellow;
+    border: 1vi solid yellow;
     border-radius: 500px;
 }
 
@@ -91,13 +107,12 @@ body {
     width: 100%;
 }
 
-.lista-cachorro div {
+.lista-cachorro div{
     display: flex;
     align-items: center;    
     gap: 30px;              
     background-image: url(imgs/images.jpeg);
-    border-radius: 500px;
-    padding: 30px;
+    border-radius: 5vmax;
     background-position-y: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,7 +121,7 @@ body {
 }
 
 .lista-cachorro div img {
-    width: 150px !important;
+    width: 15vmax !important;
     height: auto !important;
     flex-shrink: 0; 
     display: inline-block !important;
@@ -115,29 +130,54 @@ body {
 }
 
 .lista-cachorro div p {
-    font-size: 40px;
+    font-size: 3vmax;
     color: rgb(255, 255, 255);
+}
+
+.lista-cachorro h1{
+    clear: right;
+}
+
+.lista-cachorro div div{
+    display: block;
+    margin: 0;
+}
+
+.lista-cachorro div div p{
+    margin-right: 1vmax;
+    margin-bottom: 1vmax;
+    margin-left: 1vmax;
+}
+
+.lista-cachorro div div h1{
+    font-size: 6vmax;
+    color: yellow;
 }
 
 .lista-cachorro div:nth-child(even) {
     flex-direction: row-reverse; 
 }
 
-body .links{
-    margin-left: 38%;
+body{
+    text-align: center;
 }
 
 .links{
+    display: inline-flex;
     background-color: rgb(255, 238, 177);
     border-radius: 50px;
     padding: 10px;
     clear: both;
-    display: inline-block;
+    flex-direction: column;
+    align-items: center;
 }
 
 .links h1{
-    margin-left: 29%;
     margin-bottom: 10px;
+}
+
+.links a{
+    display: inline-flex;
 }
 
 #comentario {
@@ -146,7 +186,6 @@ body .links{
 }
 
 a[href^="https"] {
-    display: block;
     background-image: url(imgs/globo.png);
     background-size: 16px;
     background-repeat: no-repeat;
