@@ -88,3 +88,19 @@ function atualizarPosicao() {
 }
 
 animar();
+
+let contador = 0, ver = parseInt(localStorage.getItem('jaAcessou')) || 0;
+const inssistente = document.querySelector('.paragrafo-secreto')
+function clickar(){
+  contador++
+
+  if(contador === 5 && ver === 0){
+    window.location.href = "segredo.html";
+    ver++;
+    localStorage.setItem('jaAcessou', '1');
+  }
+  else if(contador === 5 && ver === 1){
+    alert("te avisei");
+    contador = 0;
+  }
+}
