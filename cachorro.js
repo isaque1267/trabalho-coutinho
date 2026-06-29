@@ -93,15 +93,14 @@ let contador = 0;
 
 function clickar(){
   contador++;
-  
   let ver = parseInt(localStorage.getItem('jaAcessou')) || 0;
   const mentira = document.querySelector('.mentira');
 
   if(contador === 1 && ver === 0){
     window.location.href = "segredo.html";
-    contador = 0;
     ver = 1;
     localStorage.setItem('jaAcessou', '1');
+    contador = 0;
     return;
   }
   else if(contador === 1 && ver === 1){
@@ -111,10 +110,4 @@ function clickar(){
     contador = 0;
     return;
   }
-}
-
-const botao = document.querySelector('#segredo');
-
-if(botao){
-  botao.addEventListener('click', clickar);
 }

@@ -256,12 +256,11 @@ a[href^="https"] {
 .segredo{
     padding: 5vh;
     border-radius: 10vh;
-    background-color: salmon;
-    display: inline-block;
-}
-
-.segredo{
+    background-color: rgb(189, 132, 126);
     font-size: 3vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mentira{
