@@ -89,18 +89,37 @@ function atualizarPosicao() {
 
 animar();
 
-let contador = 0, ver = parseInt(localStorage.getItem('jaAcessou')) || 0;
-const inssistente = document.querySelector('.paragrafo-secreto')
+let contador = 0;
+let f = parseInt(localStorage.getItem('mentira')) || 0;
+
+window.addEventListener('DOMContentLoaded', () => {
+  const mentira = document.querySelector('.mentira');
+  if(f === 1 && mentira){
+    mentira.classList.add('mentira-ativa');
+  }
+});
+
 function clickar(){
-  contador++
+  contador++;
+  
+  let ver = parseInt(localStorage.getItem('jaAcessou')) || 0;
+  const mentira = document.querySelector('.mentira');
 
   if(contador === 5 && ver === 0){
-    window.location.href = "segredo.html";
-    ver++;
     localStorage.setItem('jaAcessou', '1');
+    contador = 0;
+    window.location.href = "segredo.html";
+    return;
   }
   else if(contador === 5 && ver === 1){
     alert("te avisei");
+    localStorage.setItem('jaAcessou', '0');
     contador = 0;
+    localStorage.setItem('mentira', '1');
+    f = 1;
+
+    if(f === 1 && mentira){
+      mentira.classList.add('mentira-ativa');
+    }
   }
 }
