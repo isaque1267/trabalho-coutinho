@@ -112,8 +112,16 @@ function clickar(){
     localStorage.setItem('mentira', '1');
     f = 1;
 
-    if(f === 1 && mentira){
+    if(mentira){
       mentira.classList.add('mentira-ativa');
+
     }
+    return;
   }
+}
+
+const botao = document.querySelector('#segredo');
+
+if(botao){
+  botao.addEventListener('click', clickar);
 }
