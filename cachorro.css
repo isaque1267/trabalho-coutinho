@@ -17,7 +17,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 35px; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.918);
 }
 
 .aleatorios{
@@ -119,14 +120,14 @@ body {
     display: flex;
     align-items: center;    
     gap: 30px;              
-    background-image: url(imgs/images.jpeg);
+    background-color: rgb(250, 123, 123);
     border-radius: 5vmax;
     background-position-y: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 50px;
     margin-right: 20px;
-    margin top: 50px;
+    margin-top:50px;
     margin-left: 4%;
 }
 
