@@ -241,8 +241,6 @@ a[href^="https"] {
     height: 100%;
     z-index: 9999;
     position: absolute;
-    color: transparent;
-    background-color: transparent;
 }
 
 .segredo img{

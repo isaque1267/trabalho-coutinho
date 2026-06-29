@@ -90,24 +90,35 @@ function atualizarPosicao() {
 animar();
 
 let contador = 0;
+let viu = parseInt(localStorage.getItem('javiu')) || 0;
+let i = parseInt(localStorage.getItem('semalerta')) || 0; 
+let paragrafo = document.querySelector('.mentira');
 
 function clickar(){
   contador++;
-  let ver = parseInt(localStorage.getItem('jaAcessou')) || 0;
-  const mentira = document.querySelector('.mentira');
 
-  if(contador === 1 && ver === 0){
+  if(contador === 2 && viu === 0 && i !== 2){
     window.location.href = "segredo.html";
-    ver = 1;
-    localStorage.setItem('jaAcessou', '1');
     contador = 0;
-    return;
+    viu = 1;
+    localStorage.setItem('javiu' , '1');
   }
-  else if(contador === 1 && ver === 1){
+  else if(contador === 2 && viu === 1 && i !== 2){
     alert("te avisei");
-    ver = 0;
-    localStorage.setItem('jaAcessou', '0');
+    viu = 0;
+    localStorage.setItem('javiu' , '0');
+    i = 2;
+    localStorage.setItem('semalerta', '2');
     contador = 0;
-    return;
+  }
+  else if(contador === 2 && i === 2){
+    if (paragrafo) {
+      paragrafo.classList.remove('mentira');
+      paragrafo.classList.add('mentira-ativa');
+    }
+    contador = 0;
+    setTimeout(function() {
+      window.location.href = "segredo.html";
+    }, 500);
   }
 }
