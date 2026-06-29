@@ -100,9 +100,9 @@ function clickar(){
 
   if(contador === 1 && ver === 0){
     window.location.href = "segredo.html";
-    localStorage.setItem('jaAcessou', '1');
     contador = 0;
     ver = 1;
+    localStorage.setItem('jaAcessou', '1');
     return;
   }
   else if(contador === 1 && ver === 1){
