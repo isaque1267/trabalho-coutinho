@@ -92,26 +92,20 @@ animar();
 let contador = 0;
 let f = parseInt(localStorage.getItem('mentira')) || 0;
 
-window.addEventListener('DOMContentLoaded', () => {
-  const mentira = document.querySelector('.mentira');
-  if(f === 1 && mentira){
-    mentira.classList.add('mentira-ativa');
-  }
-});
-
 function clickar(){
   contador++;
   
   let ver = parseInt(localStorage.getItem('jaAcessou')) || 0;
   const mentira = document.querySelector('.mentira');
 
-  if(contador === 5 && ver === 0){
-    localStorage.setItem('jaAcessou', '1');
-    contador = 0;
+  if(contador === 1 && ver === 0){
     window.location.href = "segredo.html";
+    contador = 0;
+    ver = 1;
+    localStorage.setItem('jaAcessou', '1');
     return;
   }
-  else if(contador === 5 && ver === 1){
+  else if(contador === 1 && ver === 1){
     alert("te avisei");
     localStorage.setItem('jaAcessou', '0');
     contador = 0;
