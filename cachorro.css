@@ -9,14 +9,14 @@ img{
 }
 
 body {
-    background-color: azure;
+    background-color: rgb(208, 255, 200);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .bem{
     display: flex;
     justify-content: center;
-    padding: 35px;
+    padding: 35px; 
 }
 
 .aleatorios{
@@ -58,13 +58,15 @@ body {
 
 .intro{
     font-size: 30px;
+    text-align: left;
     margin-left: 30px;
     margin-top: 40px;
     display: block;
     width: 800px;
     padding: 50px;
     border-radius: 30px;
-    background-color: rgb(193, 250, 250);
+    border: 2px solid rgb(158, 241, 158);
+    background-color: rgb(252, 242, 157);
 }
 
 .paginas ul { 
@@ -123,7 +125,8 @@ body {
     background-repeat: no-repeat;
     margin-bottom: 50px;
     margin-top: 50px; 
-
+    margin-left: 30px;
+    margin-right: 20px;
 }
 
 .lista-cachorro div img {
