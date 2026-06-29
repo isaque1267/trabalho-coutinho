@@ -92,13 +92,6 @@ animar();
 let contador = 0;
 let f = parseInt(localStorage.getItem('mentira')) || 0;
 
-window.addEventListener('DOMContentLoaded', () => {
-  const mentira = document.querySelector('.mentira');
-  if(f === 1 && mentira){
-    mentira.classList.add('mentira-ativa');
-  }
-});
-
 function clickar(){
   contador++;
   
