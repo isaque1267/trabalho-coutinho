@@ -122,8 +122,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 50px;
-    margin-top: 50px; 
-
+    margin-top: 50px;
+    margin-left: 4%;
 }
 
 .lista-cachorro div img {
@@ -161,7 +161,9 @@ body {
 }
 
 .lista-cachorro div:nth-child(even) {
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
+    margin-right: 4%;
+    margin-left: 0;
 }
 
 body{
@@ -260,6 +262,6 @@ a[href^="https"] {
     color: transparent;
 }
 
-.mentira.mentira-ativa{
+.mentira-ativa{
     color: black !important;
 }
