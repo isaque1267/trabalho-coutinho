@@ -90,7 +90,6 @@ function atualizarPosicao() {
 animar();
 
 let contador = 0;
-let f = parseInt(localStorage.getItem('mentira')) || 0;
 
 function clickar(){
   contador++;
@@ -107,13 +106,9 @@ function clickar(){
   }
   else if(contador === 1 && ver === 1){
     alert("te avisei");
+    ver = 0;
     localStorage.setItem('jaAcessou', '0');
     contador = 0;
-    localStorage.setItem('mentira', '1');
-    f = 1;
-
-    if(f === 1 && mentira){
-      mentira.classList.add('mentira-ativa');
-    }
+    return;
   }
 }
