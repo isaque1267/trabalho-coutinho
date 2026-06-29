@@ -112,3 +112,9 @@ function clickar(){
     return;
   }
 }
+
+const botao = document.querySelector('#segredo');
+
+if(botao){
+  botao.addEventListener('click', clickar);
+}
