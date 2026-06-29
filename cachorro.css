@@ -93,12 +93,13 @@ body {
 }
 
 .apresentaçao{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .apresentaçao h2{
     margin-top: 30px;
-    font-size: 50px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
 }
 
 .cachorro {
@@ -120,7 +121,7 @@ body {
     display: flex;
     align-items: center;    
     gap: 30px;              
-    background-color: rgb(250, 123, 123);
+    background-color: rgb(22, 180, 22);
     border-radius: 5vmax;
     background-position-y: 100%;
     background-size: cover;
@@ -161,14 +162,14 @@ body {
 }
 
 .lista-cachorro div div h1{
-    font-size: 6vmax;
+    font-size: 5vmax;
     color: yellow;
 }
 
 .lista-cachorro div:nth-child(even) {
     flex-direction: row-reverse;
     margin-right: 4%;
-    margin-left: 0;
+    margin-left: 1%;
 }
 
 body{
