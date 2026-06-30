@@ -291,9 +291,15 @@ a[href^="https"] {
 
 .conteudo{
     display: flex;
-    align-items: left; 
+    align-items: center; 
     justify-content: center; 
     gap: 30px; 
     margin-top: 20px;
+}
+
+.textinho1{
+    font-size: 20px;
+    width: 500px;
+;
 }
 
