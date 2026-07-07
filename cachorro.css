@@ -14,8 +14,6 @@ body {
 }
 
 .bem{
-    display: flex;
-    justify-content: center;
     padding: 35px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgba(0, 0, 0, 0.918);
@@ -23,27 +21,26 @@ body {
 
 .aleatorios{
     display: flex;
-    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50% auto;
+    justify-content: space-evenly;
 }
 
 .aleatorios img{
-    border: 0.5vh solid yellow;
-    border-radius: 15vh;
+    border-radius: 10vh;
+    
 }
 
-.aleatorios .img1{
-    width: 50%;
-    height: 30%;
-    transform: translate(2vh, 3vh);
+.img1{
+    height: 50vh;
+    width: 80vh;
 }
 
-.aleatorios .img2{
-    width: 40%;
-    height: 40%;
-    object-position: center;
+.img2{
+    height: 500px;
+    width: 60vh;
     object-fit: cover;
-    clear: both;
-    transform: translate(-10%, -35%);
+    object-position: bottom;
 }
 
 .paginas { 
@@ -61,7 +58,6 @@ body {
 .intro{
     font-size: 30px;
     text-align: left;
-    margin-left: 30px;
     margin-top: 40px;
     display: block;
     width: 800px;
@@ -69,6 +65,8 @@ body {
     border-radius: 30px;
     border: 2px solid rgb(158, 241, 158);
     background-color: rgb(252, 242, 157);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .paginas ul { 
